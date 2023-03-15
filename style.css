@@ -1,0 +1,617 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.brandSpecificHeroImgWrapper {
+  position: relative;
+  height: 50vh; /* 20rem */
+}
+.brandSpecificHeroImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.brandSpecificHeroContentHeading {
+  color: transparent;
+  text-align: center;
+  line-height: normal;
+  font-size: 6rem;
+  -webkit-text-stroke: 3px #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins";
+}
+
+.brandSpecificContent {
+  font-family: "Poppins";
+}
+
+.trackShipmentContent {
+  max-width: 1300px;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 5rem;
+}
+.trackShipmentInfoSide {
+  background: url(./images/map_background_image.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.trackShipmentInfoSide,
+.trackShipmentIconSide {
+  flex: 1;
+}
+
+.trackShipmentHeadingWrapper {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.trackShipmentIconSide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 25rem;
+}
+
+.trackShipmentIconBox {
+  background-color: #ff8500;
+  width: 100%;
+  padding: 2rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.trackShipmentIconBoxImgWrapper {
+  max-width: 4rem;
+}
+.trackShipmentIconBoxImg {
+  width: 100%;
+}
+.trackShipmentIconBoxHeading {
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.benefitsWrapper {
+  background-color: #101012;
+}
+
+.benefitsContent {
+  text-align: center;
+  color: #fff;
+  max-width: 1300px;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+}
+
+.benefitsHeadingWithBorder,
+.informalBlogsHeadingWithBorder {
+  font-style: italic;
+  display: inline-block;
+  color: #ff8500;
+  position: relative;
+  z-index: 9999999;
+  background-color: #101012;
+  padding-bottom: 0.75rem;
+}
+
+.informalBlogsHeadingWithBorder {
+  background-color: #fff;
+}
+
+.benefitsHeadingWithBorder::after,
+.benefitsHeadingWithBorder::before,
+.informalBlogsHeadingWithBorder::after,
+.informalBlogsHeadingWithBorder::before {
+  content: "";
+  background-color: #ff8500;
+  width: 5rem;
+  height: 0.125rem;
+  z-index: 0;
+  position: absolute;
+  top: 1rem;
+  right: -8.1rem;
+  transform: translate(-50%, -50%);
+}
+.benefitsHeadingWithBorder::after,
+.informalBlogsHeadingWithBorder::after {
+  left: -3rem;
+}
+.benefitsMainHeading,
+.informalBlogsMainHeading {
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+.benefitsDesc,
+.informalBlogsDesc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  padding-bottom: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.informalBlogsDesc {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.benefitsIconContent {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+}
+
+.benefitsIconSide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.benefitsIconBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.benefitsIconBoxImgWrapper {
+  width: 4.5rem;
+  min-width: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #ff8500;
+}
+.benefitsIconBoxImg {
+  width: 100%;
+  padding: 0.8rem;
+}
+.benefitsIconBoxInfoWrapper {
+  color: #fff;
+  text-align: left;
+}
+.benefitsIconBoxHeading {
+  font-size: 0.9rem;
+}
+.benefitsIconBoxDesc {
+  font-size: 0.8rem;
+}
+.benefitsIconImgSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.benefitsIconImgSideImgWrapper {
+  max-width: 15rem;
+  margin: 0 auto;
+}
+.benefitsIconImgSideImg {
+  width: 100%;
+}
+
+.progressQuestionsContent {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  gap: 1rem;
+  display: flex;
+}
+.progressSide,
+.QuestionsSide {
+  flex: 1;
+}
+
+.progressSide,
+.QuestionsSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.progressSideImgWrapper {
+  max-width: 35rem;
+}
+.progressSideImg {
+  width: 100%;
+}
+.progressLineUpperContent {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  justify-content: space-between;
+}
+
+.progressSideDesc {
+  max-width: 35rem;
+}
+
+.progressLine {
+  max-width: 500px;
+  width: 100%;
+  height: 0.8rem;
+  border: 1px solid #000;
+  border-radius: 5rem;
+  overflow: hidden;
+}
+.progressLineFill {
+  background-color: #ff8500;
+  height: 0.8rem;
+  border-radius: 5rem;
+  transform: translateY(-0.025rem);
+}
+.progressLineFill--70 {
+  width: 70%;
+}
+.progressLineFill--80 {
+  width: 80%;
+}
+.progressLineFill--95 {
+  width: 95%;
+}
+
+.progressSideMainHeading--line {
+  max-width: 35rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.progressSideMainHeading--line::before {
+  content: "";
+  background-color: #ff8500;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.QuestionsSideSection {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  overflow: hidden;
+  min-height: 50vh;
+}
+
+.QuestionsSideAccordionBoxes {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.QuestionsSideAccordionBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid #d8d8d8;
+  margin: 1rem 0;
+  /*border-radius: 8px;*/
+  background-color: #fff;
+}
+
+.QuestionsSideAccordionBoxQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+  padding-right: 1rem;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+}
+
+.QuestionsSideAccordionBoxQuestion-arrow {
+  width: 0.75rem;
+  pointer-events: none;
+}
+
+.QuestionsSideAccordionBoxQuestion-arrow.open {
+  transform: rotate(180deg);
+}
+
+.QuestionsSideAccordionBoxQuestionText {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: auto;
+  pointer-events: none;
+  line-height: 1.5rem;
+}
+
+.QuestionsSideAccordionBoxAnswer {
+  display: none;
+}
+
+.QuestionsSideAccordionBoxAnswerText {
+  font-size: 1.1rem;
+  color: #6b6b6b;
+  padding-top: 0.5rem;
+  text-align: left;
+}
+
+/*! customerData */
+.customerDataWrapper {
+  background: #232526;
+  background: -webkit-linear-gradient(to top, #414345, #232526);
+  background: linear-gradient(to top, #414345, #232526);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+.customerDataContent {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.customerDataHeading {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 2.5rem;
+}
+.customerDataBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+.customerDataBoxImgWrapper {
+  background-color: #ff8500;
+  max-width: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+  border-radius: 50%;
+}
+.customerDataBoxImg {
+  width: 100%;
+}
+.customerDataBoxHeading,
+.customerDataBoxDesc {
+  color: #fff;
+}
+.customerDataBoxHeading {
+  font-size: 2.5rem;
+}
+.customerDataBoxDesc {
+  color: rgba(255, 255, 255, 0.85);
+}
+.customerDataButtonContent {
+  max-width: 1200px;
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customerDataButton {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 3px solid #ff8500;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+.customerDataButtonLine {
+  background-color: #ff8500;
+  opacity: 0.5;
+  height: 0.025rem;
+  margin: 0 1rem;
+  width: 25%;
+}
+
+.brandSpecificHeroWrapper,
+.trackShipmentSection,
+.benefitsWrapper,
+.progressQuestionsWrapper,
+.customerDataWrapper {
+  min-height: 50vh;
+}
+
+.informalBlogsHeadingWithBorder,
+.informalBlogsMainHeading,
+.informalBlogsHeadingWrapper,
+.informalBlogsDesc {
+  text-align: center;
+}
+
+.informalBlogsContent {
+  margin: 20rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.informalBlogsCardHeadingWrapper {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.informalBlogsCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-items: center;
+  padding: 2rem 0rem;
+}
+.informalBlogsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 22.5rem;
+}
+.informalBlogsCardHeading {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.informalBlogsCardHeading--orange {
+  color: #ff8500;
+}
+.informalBlogsImgWrapper {
+  max-width: 22.5rem;
+}
+.informalBlogsImg {
+  width: 100%;
+}
+.informalBlogsDesc {
+  text-align: left;
+  padding-bottom: 0;
+}
+.informalBlogsReadMoreBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+.informalBlogsReadMoreBtnArrow {
+  font-size: 1.5rem;
+  color: #ff8500;
+}
+@media (max-width: 1000px) {
+  .benefitsIconImgSide {
+    display: none;
+  }
+  .benefitsIconContent {
+    grid-template-columns: 1fr;
+  }
+
+  .informalBlogsCardHeading {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  .brandSpecificHeroContentHeading {
+    font-size: 3rem;
+    -webkit-text-stroke: 1.5px #fff;
+  }
+  .trackShipmentContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .trackShipmentSection,
+  .trackShipmentInfoSide {
+    min-height: auto;
+  }
+
+  .benefitsIconSide {
+    grid-template-columns: 1fr;
+  }
+
+  .informalBlogsCards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .progressQuestionsContent {
+    flex-direction: column;
+  }
+
+  .customerDataContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .customerDataHeading {
+    font-size: 2.25rem;
+  }
+  .customerDataButton {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  .trackShipmentHeading {
+    font-size: 1.25rem;
+  }
+  .trackShipmentIconSide {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .informalBlogsCards {
+    grid-template-columns: 1fr;
+  }
+  .customerDataBoxImgWrapper {
+    max-width: 4.5rem;
+  }
+  .customerDataBoxHeading {
+    font-size: 1.5rem;
+  }
+
+  .customerDataBoxDesc {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .customerDataButtonLine {
+    width: 10%;
+  }
+  .benefitsHeadingWithBorder::after,
+  .benefitsHeadingWithBorder::before,
+  .informalBlogsHeadingWithBorder::after,
+  .informalBlogsHeadingWithBorder::before {
+    width: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: -5rem;
+    transform: translate(-50%, -50%);
+  }
+  .benefitsHeadingWithBorder::after,
+  .informalBlogsHeadingWithBorder::after {
+    left: -1.75rem;
+  }
+
+  .progressSideMainHeading {
+    font-size: 1.25rem;
+  }
+  .progressQuestionsContent {
+    gap: 2rem;
+    padding: 1rem;
+  }
+  .informalBlogsContent {
+    padding: 1rem;
+  }
+}
